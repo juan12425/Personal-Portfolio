@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+       <title>MyPortfolio</title>
+       <link rel="stylesheet" href="styles.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+   </head> 
+
+   <body>
+       <header>
+           <nav>
+               <ul>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Projects</a></li>
+               </ul>
+           </nav>
+       </header>
+       <h1 id="maintitle">
+           <span class="trail">J</span><span class="trail">u</span><span class="trail">a</span><span class="trail">n</span><span class="trail">'</span><span class="trail">s</span> 
+           Portfolio
+        </h1>
+       <main>
+           <section id="portrait"></section>
+           <section id="about">
+               <div id="abouttitle"></div>
+               <div id="aboutdescription"></div>
+               <div id="aboutskills"></div>
+               <div id="aboutcontact"></div>
+           </section>
+       </main>
+
+       <script>
+        
+        let trails=document.getElementsByClassName("trail");
+        let trailsLength=trails.length;
+
+        for(let i=0; i < trailsLength; i++){
+            let element=trails[i];
+            element.onmouseover=()=>element.style.color="blue";
+            element.onmouseout=()=>element.style.color="";
+        }
+        
+    
+       </script>
+   </body>
+</html>

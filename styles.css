@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background: rgb(255, 244, 227);
+    height: 60px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+nav li{
+    display: inline-block;
+    font-size: 1.5rem;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 550px repeat(3, 200px);
+    grid-template-areas: 
+    "image image about about"
+    "des2 des2 img img"
+
+}
+
+#portrait{
+    grid-area: image;
+    background-color: blue;
+}
+
+#about{
+    grid-area: about;
+    background: red;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "abouttitle abouttitle"
+    "description skills"
+    "contact skills";
+    column-gap: 10px;
+    
+}
+
+#abouttitle{
+    background: purple;
+    grid-area: abouttitle;
+
+}
+#aboutdescription{
+    background: brown;
+    grid-area: description;
+}
+
+#aboutskills{
+    background: yellow;
+    grid-area: skills;
+}
+
+#aboutcontact{
+    background: black;
+    grid-area: contact;
+}
+
+#maintitle{
+    text-align: center;
+    margin: 20px 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
