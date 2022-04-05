@@ -25,13 +25,50 @@
            Portfolio
         </h1>
        <main>
-           <section id="portrait"></section>
-           <section id="about">
-               <div id="abouttitle"></div>
-               <div id="aboutdescription"></div>
-               <div id="aboutskills"></div>
-               <div id="aboutcontact"></div>
+           <section id="portrait">
+               <img src="images/me.jpg" alt="myself" class="myself">
            </section>
+           <section id="about">
+               <div id="abouttitle">
+                   <h2>About</h2>
+               </div>
+               <div id="aboutdescription">
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra 
+                diam. Vitae sapien pellentesque habitant morbi. Sed augue lacus viverra vitae 
+                congue eu consequat ac felis. Sed libero enim sed faucibus turpis. Egestas integer 
+                eget aliquet nibh praesent tristique magna. Sagittis aliquam malesuada bibendum
+                arcu vitae elementum curabitur vitae. Vel pretium lectus quam id leo in vitae 
+                turpis massa. Vulputate dignissim suspendisse in est ante in. Rhoncus urna 
+                neque viverra justo nec. Volutpat commodo sed egestas egestas. Cursus sit 
+                amet dictum sit amet justo donec. Amet commodo nulla facilisi nullam vehicula.
+                Nulla at volutpat diam ut venenatis tellus in metus.
+                </p>
+               </div>
+               <div id="aboutskills">
+                   <div><img src="images/1200px-Javascript-shield.svg.png"></div>
+                   <div><img src="images/1280px-Git-logo.svg.png"></div>
+                   <div><img src="images/1200px-Python-logo-notext.svg.png"></div>
+                   <div><img src="images/HTML5_logo_black.svg.png"></div>
+                   <div><img src="images/Julia_Programming_Language_Logo.svg.png"></div>
+                   <div><img src="images/mql-5-logo.png"></div>
+                   <div><img src="images/png-clipart-html-css3-cascading-style-sheets-logo-markup-language-digital-agency-miscellaneous-blue-thumbnail.png"></div>
+                   
+               </div>
+               <div id="aboutcontact">
+                   <button id="buttoncontactopen">Contact</button>
+                   <button id="buttoncontactclose">Close Contact</button>
+                   <div  id="contactinfo" class="contactinfo">
+                       <div>
+                           <p>Email: juanangelramirez1@hotmail.com<br>
+                              GitHub: <a href="https://github.com/juan12425" target="_blank">https://github.com/juan12425</a>
+                           </p>
+                        </div>
+                    </div>
+               </div>
+           </section>
+           
        </main>
 
        <script>
@@ -45,7 +82,25 @@
             element.onmouseout=()=>element.style.color="";
         }
         
-    
+        
+        let buttonContactOpen=document.getElementById("buttoncontactopen");
+        let buttonContactClose=document.getElementById("buttoncontactclose");
+        let contact=document.getElementById("contactinfo");
+        buttonContactOpen.onclick=()=>{
+            buttonContactOpen.style.display="none";
+            buttonContactClose.style.display="block";
+            contact.style.display="block"
+
+        }
+
+        buttonContactClose.onclick=()=>{
+            buttonContactClose.style.display="none";
+            buttonContactOpen.style.display="block";
+            contact.style.display="none";
+        }
+
+        
+
        </script>
    </body>
 </html>
