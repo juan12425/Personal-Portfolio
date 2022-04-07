@@ -15,8 +15,8 @@
        <header>
            <nav>
                <ul>
-                   <li><a href="#">About</a></li>
-                   <li><a href="#">Projects</a></li>
+                   <li><a href="#aboutdescription">About</a></li>
+                   <li><a href="#projectstitle">Projects</a></li>
                </ul>
            </nav>
        </header>
@@ -26,7 +26,7 @@
         </h1>
        <main>
            <section id="portrait">
-               <img src="images/me.jpg" alt="myself" class="myself">
+               <img src="images/me.jpg" alt="myself" class="myself" id="myself">
            </section>
            <section id="about">
                <div id="abouttitle">
@@ -34,26 +34,22 @@
                </div>
                <div id="aboutdescription">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra 
-                diam. Vitae sapien pellentesque habitant morbi. Sed augue lacus viverra vitae 
-                congue eu consequat ac felis. Sed libero enim sed faucibus turpis. Egestas integer 
-                eget aliquet nibh praesent tristique magna. Sagittis aliquam malesuada bibendum
-                arcu vitae elementum curabitur vitae. Vel pretium lectus quam id leo in vitae 
-                turpis massa. Vulputate dignissim suspendisse in est ante in. Rhoncus urna 
-                neque viverra justo nec. Volutpat commodo sed egestas egestas. Cursus sit 
-                amet dictum sit amet justo donec. Amet commodo nulla facilisi nullam vehicula.
-                Nulla at volutpat diam ut venenatis tellus in metus.
+                    Hi, my name’s Juan. I’m a software engineer currently living in Bogota, Colombia! 
+                    I love to develop great projects and work on them until I reach an incredible result. 
+                    Besides that, I love to learn and therefore I get to know different programming 
+                    languages such as PHP, Python, Julia, Mql5, Javascript, among others. Currently 
+                    I’m working with those technologies for building web apps and analyzing data while 
+                    I’m increasing my skills for becoming a full stack developer. 
                 </p>
                </div>
                <div id="aboutskills">
-                   <div><img src="images/1200px-Javascript-shield.svg.png"></div>
-                   <div><img src="images/1280px-Git-logo.svg.png"></div>
-                   <div><img src="images/1200px-Python-logo-notext.svg.png"></div>
-                   <div><img src="images/HTML5_logo_black.svg.png"></div>
-                   <div><img src="images/Julia_Programming_Language_Logo.svg.png"></div>
-                   <div><img src="images/mql-5-logo.png"></div>
-                   <div><img src="images/png-clipart-html-css3-cascading-style-sheets-logo-markup-language-digital-agency-miscellaneous-blue-thumbnail.png"></div>
+                   <div><img src="images/1200px-Javascript-shield.svg.png" alt="javascript logo"></div>
+                   <div><img src="images/1280px-Git-logo.svg.png" alt="git logo"></div>
+                   <div><img src="images/1200px-Python-logo-notext.svg.png" alt="python logo"></div>
+                   <div><img src="images/HTML5_logo_black.svg.png" alt="html5 logo"></div>
+                   <div><img src="images/Julia_Programming_Language_Logo.svg.png" alt="julia logo"></div>
+                   <div><img src="images/mql-5-logo.png" alt="mql5 logo"></div>
+                   <div><img src="images/png-clipart-html-css3-cascading-style-sheets-logo-markup-language-digital-agency-miscellaneous-blue-thumbnail.png" alt="css logo"></div>
                    
                </div>
                <div id="aboutcontact">
@@ -69,23 +65,24 @@
                </div>
            </section>
            
-           <section class="project1 flexreversewrap">
-                <div class="project1div1">
-                    <img src="images/huntingbots.png">
+           <h2 class="generalh2title" id="projectstitle">Projects</h2>
+           
+           <section class="project1 flexreversewrap" id="hbprojectsec">
+                <div class="project1div1" id="hbphotodivid">
+                    <a href="https://www.huntingbots.net"><img src="images/huntingbots.png" id="hbphoto" alt="Hunting Bots company page"></a>
                 </div>
                 <div class="project1div2">
                     <div>
                         <h3>Hunting Bots S.E</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Amet commodo nulla facilisi nullam vehicula ipsum a arcu. N
-                            unc pulvinar sapien et ligula ullamcorper malesuada. 
-                            Ut pharetra sit amet aliquam id diam maecenas ultricies mi. 
-                            Id consectetur purus ut faucibus pulvinar elementum integer enim. 
-                            Id aliquet risus feugiat in ante metus dictum at tempor. 
-                            Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. 
-                            Elit at imperdiet dui accumsan sit amet nulla. Massa eget egestas purus 
-                            viverra accumsan in nisl nisi scelerisque.
+                        <p>
+                            Hunting Bots is a financial start-up created and co-funded by me. 
+                            Mainly it’s aim is to offer services such as automated trading, 
+                            trading signals, consulting, and education. The technologies used 
+                            for the page creation were html, css and javascript in the front-end 
+                            and in the back-end php and mysql (the last two having an important 
+                            role retrieving and processing trading data from the Mt5 platform 
+                            as well as providing signals to client automated bots).<br>
+                            <a href="https://www.huntingbots.net" target="_blank">Link</a>
                         </p>
                     </div>
                 </div>
@@ -95,34 +92,33 @@
                <div class="project1div2">
                    <div>
                        <h3>Covid-19 analysis</h3>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                           Amet commodo nulla facilisi nullam vehicula ipsum a arcu. N
-                           unc pulvinar sapien et ligula ullamcorper malesuada. 
-                           Ut pharetra sit amet aliquam id diam maecenas ultricies mi. 
-                           Id consectetur purus ut faucibus pulvinar elementum integer enim. 
-                           Id aliquet risus feugiat in ante metus dictum at tempor. 
-                           Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. 
-                           Elit at imperdiet dui accumsan sit amet nulla. Massa eget egestas purus 
-                           viverra accumsan in nisl nisi scelerisque.
-                       </p>
+                       <p>
+                            Covid-19 analysis is a data science project developed with 
+                            Julia and based on the MIT course 18.S190. Here I worked 
+                            modeling the mechanics of a pandemic through different simulations 
+                            and data analysis to create a simple machine learning model 
+                            with multivariable calculus using the “gradient descent” technique.
+                            This was done by adapting an SIR system of differential equations 
+                            to experimental data generated previously.<br>
+                            <a href="https://github.com/juan12425/Covid19Analysis" target="_blank">Link</a>
+                        </p>
                    </div>
 
                </div>
                 <div class="project1div1 covid">
-                    <img src="images/Captura de pantalla 2022-04-06 113403.png">
+                    <a href="https://github.com/juan12425/Covid19Analysis"><img src="images/Captura de pantalla 2022-04-06 113403.png" alt="Covid-19 prediction graph"></a>
                 </div>
             </section>
 
-            <h2 id="mockdesignstitle">Mock designs</h2>
+            <h2 class="generalh2title">Mock designs</h2>
 
             <section id="mockdesigns">
                 <div>
-                    <img src="images/ferraripage.png">
+                    <a href="https://juan12425.github.io/Ferrari-retailer-company-design/" target="_blank"><img src="images/ferraripage.png" alt="Ferrari company landing page"></a>
                 </div>
 
                 <div>
-                    <img src="images/aerospacecompany.png">
+                    <a href="https://juan12425.github.io/Aerospace-Club/" target="_blank"><img src="images/aerospacecompany.png" alt="Aerospace club page"></a>
                 </div>
             </section>
 
@@ -136,10 +132,11 @@
             </footer>
         
        <script>
+
+    
         
         let trails=document.getElementsByClassName("trail");
         let trailsLength=trails.length;
-
         for(let i=0; i < trailsLength; i++){
             let element=trails[i];
             element.onmouseover=()=>element.style.color="blue";

@@ -25,12 +25,14 @@ nav li{
 main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 550px repeat(2, 450px) 30px 250px;
+    grid-template-rows: 550px 30px repeat(2, 450px) 30px 250px;
     grid-template-areas: 
     "image image about about";
     row-gap: 4rem;
     margin-bottom: 4rem;
 }
+
+
 
 #portrait{
     grid-area: image;
@@ -57,10 +59,17 @@ main{
 }
 .myself{
     display: block;
+    border-radius: 2%;
     max-width: 60%;
     max-height: 90%;
-    border-radius: 2%;
+    
 }
+
+#hbprojectsec
+{   
+    transition: height 2s;
+}
+
 
 #abouttitle{
     grid-area: abouttitle;
@@ -89,7 +98,7 @@ main{
     text-align: justify;
     width: 80%;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 
 #aboutskills{
@@ -206,7 +215,9 @@ li a{
     display: flex;
     justify-content: space-between;
     
+    
 }
+
 
 
 .project1div1{
@@ -214,7 +225,12 @@ li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 50%; 
+}
+
+.project1div1 a{
+    width: 90%;
+    transition: width 1s;
 }
 
 .project1div2{
@@ -235,12 +251,19 @@ li a{
 }
 
 .project1div1 img{
-    width: 90%;
+    width: 100%;
     height: auto;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 2%;
     box-shadow: 10px 10px 10px black;
+    
 }
+
+.project1div1 a:hover{
+    width: 95%;
+}
+
+
 
 .project1div2 h3{
     margin-top: 2%;
@@ -252,13 +275,14 @@ li a{
     text-align: justify;
     width: 90%;
     margin: 0 auto;
+    line-height: 1.8;
 }
 
 .covid{
     background: rgb(92, 108, 109);
 }
 
-#mockdesignstitle{
+.generalh2title{
     grid-column: span 4;
     margin-left: 10px;
 }
@@ -273,10 +297,14 @@ li a{
 
 }
 
-section#mockdesigns {}
 
 #mockdesigns div{
     width: 30%;
+    transition: width 1s;
+}
+
+#mockdesigns div:hover{
+    width: 35%;
 }
 
 #mockdesigns img{
@@ -302,7 +330,7 @@ footer h3{
 @media only screen and (max-width: 700px){
     main{
      
-        grid-template-rows: 550px 700px repeat(2, 900px) 30px 500px;
+        grid-template-rows: 550px 700px 30px repeat(2, 900px) 30px 500px;
         grid-template-areas: 
         "image image image image"
         "about about about about";
@@ -342,12 +370,20 @@ footer h3{
     #mockdesigns div{
         width: 80%;
     }
+
+    #mockdesigns div:hover{
+        width: 85%;
+    }
+
+    .contactinfo{
+        width: 90%;
+    }
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1024px){
     main{
      
-        grid-template-rows: 550px 700px repeat(2, 450px) 30px 250px;
+        grid-template-rows: 550px 700px 30px repeat(2, 450px) 30px 250px;
         grid-template-areas: 
         "image image image image"
         "about about about about";
@@ -364,6 +400,8 @@ footer h3{
         
         
     }
+
+    
 }
 
 
@@ -376,7 +414,7 @@ footer h3{
     }
     main{
     
-        grid-template-rows: 700px repeat(2, 450px) 30px 250px;
+        grid-template-rows: 700px 30px repeat(2, 450px) 30px 250px;
 
     }
 }
@@ -388,7 +426,7 @@ footer h3{
     }
     main{
     
-        grid-template-rows: 850px repeat(2, 600px) 30px 400px;
+        grid-template-rows: 850px 30px repeat(2, 600px) 30px 400px;
 
     }
 
@@ -396,6 +434,11 @@ footer h3{
         grid-template-rows: 1fr 8fr 1fr;
     }
 
+    .contactinfo{
+        width: 400px;
+        height: 400px;
+    
+    }
    
 
 }
