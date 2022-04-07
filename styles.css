@@ -25,11 +25,11 @@ nav li{
 main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 550px repeat(3, 200px);
+    grid-template-rows: 550px repeat(2, 450px) 30px 250px;
     grid-template-areas: 
-    "image image about about"
-    "des2 des2 img img"
-
+    "image image about about";
+    row-gap: 4rem;
+    margin-bottom: 4rem;
 }
 
 #portrait{
@@ -41,7 +41,7 @@ main{
     grid-area: about;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 2fr 4fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas: 
     "abouttitle abouttitle"
     "description skills"
@@ -73,16 +73,17 @@ main{
     font-weight: normal;
     display: inline;
     margin-left: 10px;
+
 }
 #aboutdescription{
     grid-area: description;
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: rgba(255, 249, 195, 0.075);
-    
-    
+    align-items: center;
 }
+
+
 
 #aboutdescription p{
     text-align: justify;
@@ -93,9 +94,9 @@ main{
 
 #aboutskills{
     grid-area: skills;
-    display: grid;
-    grid-template-rows: repeat(7, 7fr);
-    align-content: space-evenly;
+    display: flex;
+    
+    flex-direction: column;justify-content: space-evenly;
     border-left: 1px dotted black;
 }
 
@@ -108,7 +109,7 @@ main{
 #aboutskills img{
     display: block;
     max-width: 30%;
-    max-height: auto;
+    
 }
 
 #aboutcontact{
@@ -132,6 +133,7 @@ main{
     font-weight: 500;
     font-size: 1.2rem;
     box-shadow: black 0px 5px 10px;
+    border-radius: 3px;
 }
 
 #buttoncontactclose{
@@ -144,6 +146,7 @@ main{
     font-size: 1.2rem;
     box-shadow: black 0px 5px 10px;
     display: none;
+    border-radius: 3px;
 }
 
 .contactinfo{
@@ -156,6 +159,7 @@ main{
     box-shadow: 1px 1px 5px 1px black;
     width: 400px;
     height: 100px;
+    background: white;
 }
 
 .contactinfo div{
@@ -175,11 +179,18 @@ main{
     text-align: center;
 }
 
+@keyframes moveupdown{
+    from{bottom: 50px;}
+    to{bottom: 0px;}
+}
+
 #maintitle{
+    position: relative;
     text-align: center;
     margin: 50px 0;
     font-weight: normal;
     cursor: pointer;
+    animation: moveupdown 2s;
 }
 
 li a{
@@ -188,3 +199,203 @@ li a{
 }
 
 
+
+.project1{
+    grid-column: span 4;
+    background: rgba(228, 218, 212, 0.342);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.project1div1{
+    background-color: rgb(255, 230, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.project1div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.project1div2 div{
+    background: white;
+    width: 90%;
+    height: 90%;
+    border-radius: 2%;
+    display: flex;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+.project1div1 img{
+    width: 90%;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2%;
+    box-shadow: 10px 10px 10px black;
+}
+
+.project1div2 h3{
+    margin-top: 2%;
+    margin-left: 2%;
+    font-weight: 500;
+}
+
+.project1div2 p{
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.covid{
+    background: rgb(92, 108, 109);
+}
+
+#mockdesignstitle{
+    grid-column: span 4;
+    margin-left: 10px;
+}
+
+
+#mockdesigns{
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;background: rgba(117, 117, 117, 0.87);
+
+}
+
+section#mockdesigns {}
+
+#mockdesigns div{
+    width: 30%;
+}
+
+#mockdesigns img{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px black;
+}
+
+footer{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+footer h3{
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px){
+    main{
+     
+        grid-template-rows: 550px 700px repeat(2, 900px) 30px 500px;
+        grid-template-areas: 
+        "image image image image"
+        "about about about about";
+    
+    }
+    #aboutskills{
+        flex-direction: row;
+        align-items: center;
+    }
+    #aboutskills div{
+        width: 100%;
+    }
+    #about{
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr 10fr 2fr 2fr;
+        grid-template-areas: "abouttitle"
+        "description "
+        "skills"
+        "contact";
+        
+        
+    }
+
+    .flexnormalwrap{
+        flex-wrap: wrap;
+    }
+
+    .flexreversewrap{
+        flex-wrap: wrap-reverse;
+    }
+
+    .project1 div{
+        width: 100%;
+    }
+
+    #mockdesigns div{
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1024px){
+    main{
+     
+        grid-template-rows: 550px 700px repeat(2, 450px) 30px 250px;
+        grid-template-areas: 
+        "image image image image"
+        "about about about about";
+    
+    }
+
+    #about{
+      
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 2fr 10fr 2fr;
+        grid-template-areas: "abouttitle abouttitle"
+        "description skills"
+        "contact empty";
+        
+        
+    }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+    
+    
+
+    #about{
+        grid-template-rows: 1fr 4fr 1fr;
+    }
+    main{
+    
+        grid-template-rows: 700px repeat(2, 450px) 30px 250px;
+
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px){
+   
+     html{
+        font-size: 22px;
+    }
+    main{
+    
+        grid-template-rows: 850px repeat(2, 600px) 30px 400px;
+
+    }
+
+    #about{
+        grid-template-rows: 1fr 8fr 1fr;
+    }
+
+   
+
+}
