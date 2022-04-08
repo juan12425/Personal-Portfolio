@@ -52,16 +52,26 @@ main{
     
 }
 
+@keyframes moveaside{
+    from{left: 0;}
+    to{left: 26%;}
+}
 #portrait{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
 }
+
+
 .myself{
     display: block;
     border-radius: 2%;
     max-width: 60%;
     max-height: 90%;
+    animation: moveaside 2s;
+    position: absolute;
     
 }
 
