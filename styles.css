@@ -53,14 +53,14 @@ main{
 }
 
 @keyframes moveaside{
-    from{left: 0;}
-    to{left: 26%;}
+    from{margin-right: 30%;}
+    to{left: 0;}
 }
+
 #portrait{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 
 }
 
@@ -71,7 +71,6 @@ main{
     max-width: 60%;
     max-height: 90%;
     animation: moveaside 2s;
-    position: absolute;
     
 }
 
