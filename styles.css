@@ -25,13 +25,53 @@ nav li{
 main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 550px 30px repeat(2, 450px) 30px 250px;
+    grid-template-rows: 550px 30px repeat(3, 450px) 30px 250px;
     grid-template-areas: 
     "image image about about";
     row-gap: 4rem;
     margin-bottom: 4rem;
 }
 
+
+#navcertificates{
+    background: black;
+}
+
+#navcertificates a{
+    color: white;
+}
+
+#svc{
+    margin-top: 5rem;
+}
+.pdfcertificatesdiv{
+    width:80%;
+    margin:0 auto;
+}
+
+.pdfcertificatesdiv h2{
+    font-weight: normal;
+    margin-left: 1%;
+}
+
+iframe{
+    display: block;
+    margin: 3rem auto;
+    height: 600px;
+    width: 100%;
+}
+
+#dfe iframe{
+    height: 500px;
+}
+
+#pythoncer iframe{
+    height: 600px;
+}
+
+#qc iframe{
+    height: 450px;
+}
 
 
 #portrait{
@@ -296,7 +336,9 @@ li a{
     margin-left: 10px;
 }
 
-
+#blogphotodivid{
+    background: rgb(32, 248, 255);  
+}
 #mockdesigns{
     grid-column: span 4;
     display: flex;
@@ -337,21 +379,49 @@ footer h3{
 }
 
 @media only screen and (max-width: 700px){
+    .pdfcertificatesdiv{
+        width: 100%
+    }
+
+    iframe{
+        height: 300px;
+    }
+    
+    #dfe iframe{
+        height: 250px;
+    }
+    
+    #pythoncer iframe{
+        height: 300px;
+    }
+    
+    #qc iframe{
+        height: 300px;
+    }
+   
+
+    nav a{
+        font-size: 15px;
+    }
+
     main{
      
-        grid-template-rows: 550px 700px 30px repeat(2, 900px) 30px 500px;
+        grid-template-rows: 550px 700px 30px repeat(3, 900px) 30px 500px;
         grid-template-areas: 
         "image image image image"
         "about about about about";
     
     }
+
     #aboutskills{
         flex-direction: row;
         align-items: center;
     }
+
     #aboutskills div{
         width: 100%;
     }
+
     #about{
         
         grid-template-columns: 100%;
@@ -390,9 +460,10 @@ footer h3{
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1024px){
+  
     main{
      
-        grid-template-rows: 550px 700px 30px repeat(2, 450px) 30px 250px;
+        grid-template-rows: 550px 700px 30px repeat(3, 450px) 30px 250px;
         grid-template-areas: 
         "image image image image"
         "about about about about";
@@ -423,19 +494,19 @@ footer h3{
     }
     main{
     
-        grid-template-rows: 700px 30px repeat(2, 450px) 30px 250px;
+        grid-template-rows: 700px 30px repeat(3, 450px) 30px 250px;
 
     }
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 2560px){
    
-     html{
+    html{
         font-size: 22px;
     }
     main{
     
-        grid-template-rows: 850px 30px repeat(2, 600px) 30px 400px;
+        grid-template-rows: 850px 30px repeat(3, 600px) 30px 400px;
 
     }
 
