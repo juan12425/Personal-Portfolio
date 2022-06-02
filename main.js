@@ -22,3 +22,35 @@ buttonContactClose.onclick=()=>{
     buttonContactOpen.style.display="block";
     contact.style.display="none";
 }
+
+let mainAqPhoto=document.getElementById("aq2");
+let secondAqPhoto=document.getElementById("aq3");
+let thirdAqPhoto=document.getElementById("aq1");
+
+mainAqPhoto.onmouseover= () => {
+    mainAqPhoto.style.right="0";
+};
+
+mainAqPhoto.onmouseout= () => {
+    mainAqPhoto.style.right="30%"
+};
+
+secondAqPhoto.onmouseover= () =>{
+    secondAqPhoto.style.right="0";
+    mainAqPhoto.style.right="100%";
+}
+
+secondAqPhoto.onmouseout= () => {
+    secondAqPhoto.style.right="10%";
+    mainAqPhoto.style.right="30%"
+}
+
+thirdAqPhoto.onmouseover= () =>{
+    secondAqPhoto.style.right="100%";
+    mainAqPhoto.style.right="100%";
+}
+
+thirdAqPhoto.onmouseout= () => {
+    secondAqPhoto.style.right="10%";
+    mainAqPhoto.style.right="30%"
+}
