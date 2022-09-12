@@ -258,7 +258,7 @@ li a{
 
 
 .project1div1{
-    background-color: rgb(255 207 56 / 33%);
+    background-color: rgb(12 61 128 / 13%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,7 +325,7 @@ li a{
 }
 
 #blogphotodivid{
-    background: rgb(54 164 236 / 23%);
+    background: rgb(255 246 184 / 23%);
 }
 #mockdesigns{
     grid-column: span 4;
