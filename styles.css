@@ -25,7 +25,7 @@ nav li{
 main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 550px 30px repeat(4, 450px) 30px;
+    grid-template-rows: 550px 30px repeat(5, 450px) 30px;
     grid-template-areas: 
     "image image about about";
     row-gap: 4rem;
@@ -325,7 +325,7 @@ li a{
 }
 
 #blogphotodivid{
-    background: rgb(255 246 184 / 23%);
+    background: rgba(255, 255, 255, 0.93)
 }
 #mockdesigns{
     grid-column: span 4;
@@ -366,12 +366,14 @@ footer h3{
     text-align: center;
 }
 
-
+.github-users
+{
+    background: #0058ff1f;
+}
 
 .aquarium
 {
     position: relative;
-    background: rgb(255, 0, 0);
     overflow: hidden;
     
 }
@@ -427,7 +429,7 @@ footer h3{
 
     main{
      
-        grid-template-rows: 550px 700px 30px repeat(4, 900px) 30px;
+        grid-template-rows: 550px 700px 30px repeat(5, 900px) 30px;
         grid-template-areas: 
         "image image image image"
         "about about about about";
@@ -484,7 +486,7 @@ footer h3{
   
     main{
      
-        grid-template-rows: 550px 700px 30px repeat(4, 450px) 30px;
+        grid-template-rows: 550px 700px 30px repeat(5, 450px) 30px;
         grid-template-areas: 
         "image image image image"
         "about about about about";
@@ -515,7 +517,7 @@ footer h3{
     }
     main{
     
-        grid-template-rows: 700px 30px repeat(4, 450px) 30px;
+        grid-template-rows: 700px 30px repeat(5, 450px) 30px;
 
     }
 }
@@ -527,7 +529,7 @@ footer h3{
     }
     main{
     
-        grid-template-rows: 850px 30px repeat(4, 600px) 30px;
+        grid-template-rows: 850px 30px repeat(5, 600px) 30px;
 
     }
 
