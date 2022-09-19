@@ -291,7 +291,7 @@ li a{
     width: 100%;
     height: auto;
     border: 2px solid rgb(255, 255, 255);
-    border-radius: 2%;
+    border-radius: 10px;
     box-shadow: 10px 10px 10px black;
     
 }
@@ -325,7 +325,7 @@ li a{
 }
 
 #blogphotodivid{
-    background: rgba(255, 255, 255, 0.93)
+    background: rgba(236, 236, 236, 0.93);
 }
 #mockdesigns{
     grid-column: span 4;
@@ -368,7 +368,7 @@ footer h3{
 
 .github-users
 {
-    background: #0058ff1f;
+    background: #003c53;
 }
 
 .aquarium
