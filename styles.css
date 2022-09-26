@@ -25,7 +25,7 @@ nav li{
 main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 550px 30px repeat(5, 450px) 30px;
+    grid-template-rows: 550px 30px repeat(6, 450px) 30px;
     grid-template-areas: 
     "image image about about";
     row-gap: 4rem;
@@ -366,10 +366,6 @@ footer h3{
     text-align: center;
 }
 
-.github-users
-{
-    background: #003c53;
-}
 
 .aquarium
 {
@@ -412,6 +408,16 @@ footer h3{
     margin-left: 10px;
     margin-top: 2rem;
 }
+
+.github-users
+{
+    background: rgba(190, 182, 251, 0.15)
+}
+
+#the-trattoria-div{
+    background: #ff830021;
+}
+
 @media only screen and (max-width: 700px){
     .pdfcertificatesdiv{
         width: 100%
@@ -440,7 +446,7 @@ footer h3{
 
     main{
      
-        grid-template-rows: 550px 700px 30px repeat(5, 900px) 30px;
+        grid-template-rows: 550px 700px 30px repeat(6, 900px) 30px;
         grid-template-areas: 
         "image image image image"
         "about about about about";
@@ -497,7 +503,7 @@ footer h3{
   
     main{
      
-        grid-template-rows: 550px 700px 30px repeat(5, 450px) 30px;
+        grid-template-rows: 550px 700px 30px repeat(6, 450px) 30px;
         grid-template-areas: 
         "image image image image"
         "about about about about";
@@ -528,7 +534,7 @@ footer h3{
     }
     main{
     
-        grid-template-rows: 700px 30px repeat(5, 450px) 30px;
+        grid-template-rows: 700px 30px repeat(6, 450px) 30px;
 
     }
 }
@@ -540,7 +546,7 @@ footer h3{
     }
     main{
     
-        grid-template-rows: 850px 30px repeat(5, 600px) 30px;
+        grid-template-rows: 850px 30px repeat(6, 600px) 30px;
 
     }
 

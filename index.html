@@ -8,7 +8,6 @@
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
    </head> 
 
    <body>
@@ -21,13 +20,15 @@
                </ul>
            </nav>
        </header>
+
        <h1 id="maintitle">
            <span class="trail">J</span><span class="trail">u</span><span class="trail">a</span><span class="trail">n</span><span class="trail">'</span><span class="trail">s</span> 
            Portfolio
-        </h1>
+       </h1>
+
        <main>
            <section id="portrait">
-               <img src="images/me.jpg" alt="myself" class="myself" id="myself">
+               <img id="myself"  class="myself" src="images/me.jpg" alt="myself">
            </section>
            <section id="about">
                <div id="abouttitle">
@@ -66,11 +67,11 @@
                </div>
            </section>
            
-           <h2 class="generalh2title" id="projectstitle">Projects</h2>
+           <h2 id="projectstitle" class="generalh2title">Projects</h2>
            
            <section class="project1 flexreversewrap" id="hbprojectsec">
-                <div class="project1div1" id="hbphotodivid">
-                    <a href="https://www.huntingbots.net"><img src="images/huntingbots.png" id="hbphoto" alt="Hunting Bots company page"></a>
+                <div id="hbphotodivid" class="project1div1">
+                    <a href="https://www.huntingbots.net"><img id="hbphoto" src="images/huntingbots.png" alt="Hunting Bots company page"></a>
                 </div>
                 <div class="project1div2">
                     <div>
@@ -96,7 +97,7 @@
                 <div>
                     <h3>GitHub User Search</h3>
                     <p>
-                        The GitHub User Search is a website made with React that interacts with the github users 
+                        The GitHub User Search is a web app made with React that interacts with the github users 
                         API when triggered by user interaction. It lets you search for public information about 
                         any user signed up. 
                         <br>
@@ -106,12 +107,32 @@
                      </p>
                 </div>
             </div>
-             <div class="project1div1 github-users">
-                 <a href="https://juan12425.github.io/Search-GitHub-Users/"><img src="images/github-users.png" alt="GitHub users search"></a>
-             </div>
-         </section>
+                <div class="project1div1 github-users">
+                    <a href="https://juan12425.github.io/Search-GitHub-Users/"><img src="images/github-users.png" alt="GitHub users search"></a>
+                </div>
+            </section>
 
-           <section class="project1 flexnormalwrap">
+            <section id="hbprojectsec" class="project1 flexreversewrap">
+                <div id="the-trattoria-div" class="project1div1">
+                    <a href="https://juan12425.github.io/The-Trattoria/"><img src="images/the-trattoria.png" alt="The Trattoria landing page"></a>
+                </div>
+                <div class="project1div2">
+                    <div>
+                        <h3>The Trattoria</h3>
+                        <p>
+                            The Trattoria is an Italian restaurant front-end design web app made 
+                            with react-redux. It contains different features such as the management 
+                            of dishes in a menu through the collection of state information that is
+                             subsequently displayed in other parts of the app. Also, it contains the 
+                             possibility to retrieve menu information from a pre-built API 
+                             (not available directly in GitHub).<br>
+                            <a href="https://github.com/juan12425/The-Trattoria" target="_blank">Link</a><br>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project1 flexnormalwrap">
                <div class="project1div2">
                    <div>
                        <h3>Covid-19 analysis</h3>
@@ -132,9 +153,9 @@
                 </div>
             </section>
 
-            <section class="project1 flexreversewrap" id="blogprojectsec">
-                <div class="project1div1" id="blogphotodivid">
-                    <a href="https://github.com/juan12425/Blog"><img src="images/quererver.png" id="blog" alt="Student's Philosophy blog presentation"></a>
+            <section id="blogprojectsec" class="project1 flexreversewrap">
+                <div id="blogphotodivid" class="project1div1">
+                    <a href="https://github.com/juan12425/Blog"><img id="blog" src="images/quererver.png" alt="Student's Philosophy blog presentation"></a>
                 </div>
                 <div class="project1div2">
                     <div>
