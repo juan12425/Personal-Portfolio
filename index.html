@@ -74,10 +74,10 @@
                 <div id="hbphotodivid" class="project1div1">
                     <button id="back-hb" class="showcase-buttons" disabled> < </button>
                     <a href="https://www.huntingbots.net">
-                        <img id="hbphoto-1" src="images/huntingbots.png" alt="Hunting Bots company page">
-                        <img id="hbphoto-2" class="showcase-image-hidden" src="images/signals-table.png" alt="Hunting Bots signals table">
-                        <img id="hbphoto-3" class="showcase-image-hidden" src="images/pie-chart.png" alt="Hunting Bots pie chart portfolio">
-                        <img id="hbphoto-4" class="showcase-image-hidden" src="images/bar-chart.png" alt="Hunting Bots bar chart portfolio">
+                        <img id="hb-photo-1" src="images/huntingbots.png" alt="Hunting Bots company page">
+                        <img id="hb-photo-2" class="showcase-image-hidden" src="images/signals-table.png" alt="Hunting Bots signals table">
+                        <img id="hb-photo-3" class="showcase-image-hidden" src="images/pie-chart.png" alt="Hunting Bots pie chart portfolio">
+                        <img id="hb-photo-4" class="showcase-image-hidden" src="images/bar-chart.png" alt="Hunting Bots bar chart portfolio">
                     </a>
                     <button id="forw-hb" class="showcase-buttons"> > </button>
                 </div>
@@ -123,7 +123,13 @@
 
             <section id="hbprojectsec" class="project1 flexreversewrap">
                 <div id="the-trattoria-div" class="project1div1">
-                    <a href="https://juan12425.github.io/The-Trattoria/"><img src="images/the-trattoria.png" alt="The Trattoria landing page"></a>
+                    <button id="back-trattoria" class="showcase-buttons" disabled> < </button>
+                    <a href="https://juan12425.github.io/The-Trattoria/">
+                        <img id="trattoria-photo-1" src="images/the-trattoria.png" alt="The Trattoria landing page">
+                        <img id="trattoria-photo-2" src="images/menu.png" class="showcase-image-hidden" alt="The Trattoria landing page">
+                        <img id="trattoria-photo-3" src="images/delivery.png" class="showcase-image-hidden" alt="The Trattoria landing page">
+                    </a>
+                    <button id="forw-trattoria" class="showcase-buttons"> > </button>
                 </div>
 
                 <div class="project1div2">
@@ -231,8 +237,8 @@
                 const count=generalCount[type].count
                 const limit=generalCount[type].limit
                 const newPhotoNumberID=count+1
-                const idNext=type+'photo'+'-'+newPhotoNumberID
-                const idCurrent=type+'photo'+'-'+count
+                const idNext=type+'-'+'photo'+'-'+newPhotoNumberID
+                const idCurrent=type+'-'+'photo'+'-'+count
                 
                 if(newPhotoNumberID <= limit)
                 {
@@ -256,8 +262,8 @@
                 const count=generalCount[type].count
                 const limit=generalCount[type].limit
                 const newPhotoNumberID=count-1
-                const idPrev=type+'photo'+'-'+newPhotoNumberID
-                const idCurrent=type+'photo'+'-'+count
+                const idPrev=type+'-'+'photo'+'-'+newPhotoNumberID
+                const idCurrent=type+'-'+'photo'+'-'+count
                 
                 if(newPhotoNumberID <= limit)
                 {
@@ -278,6 +284,12 @@
             generalCount.hb={count:1, limit:4}
             forwHB.addEventListener('click', forwardPhoto)
             backHB.addEventListener('click', backwardPhoto)
+
+            const forwtTrattoria=document.getElementById('forw-trattoria')
+            const backTrattoria=document.getElementById('back-trattoria')
+            generalCount.trattoria={count:1, limit:3}
+            forwtTrattoria.addEventListener('click', forwardPhoto)
+            backTrattoria.addEventListener('click', backwardPhoto)
 
 
         </script>
