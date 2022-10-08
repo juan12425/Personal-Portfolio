@@ -25,7 +25,6 @@ nav li{
 main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 550px 30px repeat(6, 450px) 30px;
     grid-template-areas: 
     "image image about about";
     row-gap: 4rem;
@@ -251,8 +250,7 @@ li a{
     background: rgba(228, 218, 212, 0.342);
     display: flex;
     justify-content: space-between;
-    
-    
+ 
 }
 
 
@@ -280,11 +278,12 @@ li a{
 .project1div2 div{
     background: white;
     width: 90%;
-    height: 90%;
+    min-height: 90%;
     border-radius: 2%;
     display: flex;
     align-items: space-around;
     flex-wrap: wrap;
+    margin: 2rem 0;
 }
 
 .project1div1 img{
@@ -293,6 +292,7 @@ li a{
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
+    margin: 5rem 0;
     
 }
 
@@ -445,8 +445,6 @@ footer h3{
     }
 
     main{
-     
-        grid-template-rows: 550px 700px 30px repeat(6, 900px) 30px;
         grid-template-areas: 
         "image image image image"
         "about about about about";
@@ -497,13 +495,15 @@ footer h3{
     .contactinfo{
         width: 90%;
     }
+
+    #aboutdescription p{
+        margin: 2rem 0;
+    }
 }
 
 @media only screen and (min-width: 701px) and (max-width: 1024px){
   
     main{
-     
-        grid-template-rows: 550px 700px 30px repeat(6, 450px) 30px;
         grid-template-areas: 
         "image image image image"
         "about about about about";
@@ -532,22 +532,12 @@ footer h3{
     #about{
         grid-template-rows: 1fr 4fr 1fr;
     }
-    main{
-    
-        grid-template-rows: 700px 30px repeat(6, 450px) 30px;
-
-    }
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 2560px){
    
     html{
         font-size: 22px;
-    }
-    main{
-    
-        grid-template-rows: 850px 30px repeat(6, 600px) 30px;
-
     }
 
     #about{
