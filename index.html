@@ -63,8 +63,8 @@
                             <p>Email: juanangelramirez1@hotmail.com<br>
                                 GitHub: <a href="https://github.com/juan12425" target="_blank">https://github.com/juan12425</a>
                             </p>
-                            </div>
                         </div>
+                    </div>
                 </div>
             </section>
             
@@ -72,8 +72,16 @@
            
             <section class="project1 flexreversewrap" id="hbprojectsec">
                 <div id="hbphotodivid" class="project1div1">
-                    <a href="https://www.huntingbots.net"><img id="hbphoto" src="images/huntingbots.png" alt="Hunting Bots company page"></a>
+                    <button id="back-hb" class="showcase-buttons" disabled> < </button>
+                    <a href="https://www.huntingbots.net">
+                        <img id="hbphoto-1" src="images/huntingbots.png" alt="Hunting Bots company page">
+                        <img id="hbphoto-2" class="showcase-image-hidden" src="images/signals-table.png" alt="Hunting Bots signals table">
+                        <img id="hbphoto-3" class="showcase-image-hidden" src="images/pie-chart.png" alt="Hunting Bots pie chart portfolio">
+                        <img id="hbphoto-4" class="showcase-image-hidden" src="images/bar-chart.png" alt="Hunting Bots bar chart portfolio">
+                    </a>
+                    <button id="forw-hb" class="showcase-buttons"> > </button>
                 </div>
+
                 <div class="project1div2">
                     <div>
                         <h3>Hunting Bots S.E (chief developer)</h3>
@@ -87,7 +95,6 @@
                             as well as providing signals to client automated bots).<br>
                             <a href="https://www.huntingbots.net" target="_blank">Link</a><br>
                             <a href=".\certificates\patents\dnda.pdf">Copyright File</a> 
-
                         </p>
                     </div>
                 </div>
@@ -212,5 +219,67 @@
         </footer>
         
         <script src = "main.js" type = "text/javascript" ></script>
+        <script>
+
+            let generalCount={}
+
+            function forwardPhoto(event){
+                const target=event.target
+                const id=target.id
+                const type=id.split("-")[1]
+                document.getElementById(`back-${type}`).disabled=false
+                const count=generalCount[type].count
+                const limit=generalCount[type].limit
+                const newPhotoNumberID=count+1
+                const idNext=type+'photo'+'-'+newPhotoNumberID
+                const idCurrent=type+'photo'+'-'+count
+                
+                if(newPhotoNumberID <= limit)
+                {
+                    const nextPhoto=document.getElementById(idNext)
+                    const currentPhoto=document.getElementById(idCurrent)
+                    currentPhoto.style.display="none"
+                    nextPhoto.style.display="block"
+                    generalCount[type].count=newPhotoNumberID
+                }
+
+                if(newPhotoNumberID == limit){
+                    target.disabled=true
+                }                 
+            }
+
+            function backwardPhoto(){
+                const target=event.target
+                const id=target.id
+                const type=id.split("-")[1]
+                document.getElementById(`forw-${type}`).disabled=false
+                const count=generalCount[type].count
+                const limit=generalCount[type].limit
+                const newPhotoNumberID=count-1
+                const idPrev=type+'photo'+'-'+newPhotoNumberID
+                const idCurrent=type+'photo'+'-'+count
+                
+                if(newPhotoNumberID <= limit)
+                {
+                    const prevPhoto=document.getElementById(idPrev)
+                    const currentPhoto=document.getElementById(idCurrent)
+                    currentPhoto.style.display="none"
+                    prevPhoto.style.display="block"
+                    generalCount[type].count=newPhotoNumberID
+                }
+
+                if(newPhotoNumberID == 1){
+                    target.disabled=true
+                }    
+            }
+
+            const forwHB=document.getElementById('forw-hb')
+            const backHB=document.getElementById('back-hb')
+            generalCount.hb={count:1, limit:4}
+            forwHB.addEventListener('click', forwardPhoto)
+            backHB.addEventListener('click', backwardPhoto)
+
+
+        </script>
     </body>
 </html>

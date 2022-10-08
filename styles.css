@@ -296,6 +296,10 @@ li a{
     
 }
 
+.showcase::after {
+    content: "→";
+  }
+
 .project1div1 a:hover{
     width: 95%;
 }
@@ -416,6 +420,19 @@ footer h3{
 
 #the-trattoria-div{
     background: #ff830021;
+}
+
+.showcase-image-hidden{
+    display: none;
+    transition: transform 1s;
+}
+
+.showcase-buttons{
+    background: black;
+    color: white;
+    border: none;
+    margin: 0 10px;
+    padding: 5px;
 }
 
 @media only screen and (max-width: 700px){
