@@ -123,3 +123,9 @@ const backTrattoria=document.getElementById('back-trattoria')
 generalCount.trattoria={count:1, limit:3}
 forwtTrattoria.addEventListener('click', forwardPhoto)
 backTrattoria.addEventListener('click', backwardPhoto)
+
+const forwtTtb=document.getElementById('forw-ttb')
+const backTtb=document.getElementById('back-ttb')
+generalCount.ttb={count:1, limit:2}
+forwtTtb.addEventListener('click', forwardPhoto)
+backTtb.addEventListener('click', backwardPhoto)

@@ -250,6 +250,7 @@ li a{
     background: rgba(228, 218, 212, 0.342);
     display: flex;
     justify-content: space-between;
+    min-height: 100vh;
  
 }
 
@@ -433,6 +434,10 @@ footer h3{
     border: none;
     margin: 0 10px;
     padding: 5px;
+}
+
+.ttb{
+    background: rgba(122, 218, 255, 0.51);
 }
 
 @media only screen and (max-width: 700px){
