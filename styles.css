@@ -440,6 +440,10 @@ footer h3{
     background: rgba(146, 219, 255, 0.11);
 }
 
+.dv-background{
+    background: rgba(255, 255, 255, 0.43);
+}
+
 @media only screen and (max-width: 700px){
     .pdfcertificatesdiv{
         width: 100%
