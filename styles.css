@@ -5,6 +5,10 @@
     font-family: 'DM Sans', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 nav{
     display: flex;
     align-items: center;
