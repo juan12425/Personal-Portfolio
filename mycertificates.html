@@ -1,51 +1,90 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
    <head>
-       <title>My Certificates</title>
-       <link rel="stylesheet" href="styles.css">
+       <title>Certificates | Juan Quinche</title>
+       <meta name="description" content="An index of Juan Quinche's mathematics, programming, and engineering certificates.">
        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="styles.css">
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-   </head> 
-
+       <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+   </head>
    <body id="certificates-body">
-        <header>
-            <nav id="navcertificates">
-                <ul>
-                    <li><a href="index.html#aboutdescription">About</a></li>
-                    <li><a href="index.html#projectstitle">Projects</a></li>
-                    <li><a href="mycertificates.html">Cetificates</a></li>
-                </ul>
-            </nav>
-        </header>
+       <header>
+           <nav id="navcertificates" aria-label="Main navigation">
+               <ul>
+                   <li><a href="index.html#aboutdescription">About</a></li>
+                   <li><a href="code-examples.html">Code Examples</a></li>
+                   <li><a href="index.html#projectstitle">Projects</a></li>
+                   <li><a href="mycertificates.html" aria-current="page">Certificates</a></li>
+               </ul>
+           </nav>
+       </header>
 
-        
-        <h2>Single Variable Calculus</h2>
-        <img src=".\certificates\svc\1.jpg" alt="certificate">
-        <img src=".\certificates\svc\2.jpg" alt="certificate">
-        <img src=".\certificates\svc\3.jpg" alt="certificate">
-        <img src=".\certificates\svc\4.jpg" alt="certificate">
-      
-        
-        <h2>Differential Equations</h2>
-        <img src=".\certificates\dfe\4.jpg" alt="certificate">
-        <img src=".\certificates\dfe\5.jpg" alt="certificate">
-        <img src=".\certificates\dfe\6.jpg" alt="certificate">
-        <img src=".\certificates\dfe\3.jpg" alt="certificate">
-        <img src=".\certificates\dfe\2.jpg" alt="certificate">
-        <img src=".\certificates\dfe\1.jpg" alt="certificate">
-        
-      
-        <h2>Python</h2>
-        <img src=".\certificates\python\Coursera KQPV2XYNGJY8-1.jpg">
-        
-        
-        <h2>Introduction to Quantum Computing</h2>
-        <img src=".\certificates\qc\90059843676733-1.jpg">
-       
+       <main class="certificate-page">
+           <header class="certificate-heading">
+               <p class="eyebrow">Juan Quinche / Portfolio</p>
+               <h1>Certificates</h1>
+               <p>Selected coursework and credentials in mathematics, programming, and engineering.</p>
+           </header>
+
+           <nav class="certificate-index" aria-label="Certificate categories">
+               <a href="#single-variable-calculus">Single Variable Calculus <span>04</span></a>
+               <a href="#differential-equations">Differential Equations <span>06</span></a>
+               <a href="#python">Python <span>01</span></a>
+               <a href="#quantum-computing">Quantum Computing <span>01</span></a>
+               <a href="#software-cloud">Software &amp; Cloud <span>02</span></a>
+           </nav>
+
+           <div class="certificate-groups">
+               <section class="certificate-group" id="single-variable-calculus">
+                   <h2>Single Variable Calculus</h2>
+                   <ul>
+                       <li><a href="certificates/svc/1.jpg" target="_blank" rel="noopener">Calculus 1A: Differentiation <span>Sep 26, 2020</span></a></li>
+                       <li><a href="certificates/svc/2.jpg" target="_blank" rel="noopener">Calculus 1B: Integration <span>Jan 15, 2021</span></a></li>
+                       <li><a href="certificates/svc/3.jpg" target="_blank" rel="noopener">Calculus 1C: Coordinate Systems &amp; Infinite Series <span>May 7, 2021</span></a></li>
+                       <li><a href="certificates/svc/4.jpg" target="_blank" rel="noopener">Single Variable Calculus XSeries <span>May 2021</span></a></li>
+                   </ul>
+               </section>
+
+               <section class="certificate-group" id="differential-equations">
+                   <h2>Differential Equations</h2>
+                   <ul>
+                       <li><a href="certificates/dfe/1.jpg" target="_blank" rel="noopener">Differential Equations XSeries <span>Sep 2022</span></a></li>
+                       <li><a href="certificates/dfe/2.jpg" target="_blank" rel="noopener">Transfer Functions and the Laplace Transform <span>Sep 11, 2022</span></a></li>
+                       <li><a href="certificates/dfe/3.jpg" target="_blank" rel="noopener">Fourier Series and Partial Differential Equations <span>May 14, 2022</span></a></li>
+                       <li><a href="certificates/dfe/4.jpg" target="_blank" rel="noopener">Linear Algebra and NxN Systems <span>Mar 5, 2022</span></a></li>
+                       <li><a href="certificates/dfe/5.jpg" target="_blank" rel="noopener">Differential Equations: 2x2 Systems <span>Nov 21, 2021</span></a></li>
+                       <li><a href="certificates/dfe/6.jpg" target="_blank" rel="noopener">Introduction to Differential Equations <span>Sep 4, 2021</span></a></li>
+                   </ul>
+               </section>
+
+               <section class="certificate-group" id="python">
+                   <h2>Python</h2>
+                   <ul>
+                       <li><a href="certificates/python/Coursera%20KQPV2XYNGJY8-1.jpg" target="_blank" rel="noopener">Python for Everybody Specialization <span>Sep 14, 2020</span></a></li>
+                   </ul>
+               </section>
+
+               <section class="certificate-group" id="quantum-computing">
+                   <h2>Introduction to Quantum Computing</h2>
+                   <ul>
+                       <li><a href="certificates/qc/90059843676733-1.jpg" target="_blank" rel="noopener">Introduction to Quantum Computing <span>Sep 2021 - Apr 2022 course period</span></a></li>
+                   </ul>
+               </section>
+
+               <section class="certificate-group" id="software-cloud">
+                   <h2>Software &amp; Cloud</h2>
+                   <ul>
+                       <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/XDLMC2IMXG7M" target="_blank" rel="noopener">IBM Full Stack Software Developer <span>Dec 26, 2024</span></a></li>
+                       <li><a href="https://www.credly.com/badges/b865fc00-a481-476d-9c71-19665059d29e/public_url" target="_blank" rel="noopener">AWS Academy Graduate - Cloud Foundations <span>Jan 16, 2025</span></a></li>
+                   </ul>
+               </section>
+           </div>
+       </main>
+
+       <footer>
+           <h3>Juan Quinche · Portfolio</h3>
+       </footer>
    </body>
 </html>
-

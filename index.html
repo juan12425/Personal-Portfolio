@@ -2,7 +2,8 @@
 
 <html>
    <head>
-       <title>MyPortfolio</title>
+    <title>Juan Quinche | Software & Mechanical Engineering</title>
+    <meta name="description" content="Juan Quinche's software and mechanical engineering portfolio, featuring full-stack applications, data analysis, and robotics projects.">
        <link rel="stylesheet" href="styles.css">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,21 +16,20 @@
            <nav>
                <ul>
                    <li><a href="index.html#aboutdescription">About</a></li>
+                   <li><a href="code-examples.html">Code Examples</a></li>
                    <li><a href="index.html#projectstitle">Projects</a></li>
-                   <li><a href="mycertificates.html">Cetificates</a></li>
+                   <li><a href="mycertificates.html">Certificates</a></li>
                </ul>
            </nav>
        </header>
 
-       <h1 id="maintitle">
-           <span class="trail">J</span><span class="trail">u</span><span class="trail">a</span><span class="trail">n</span><span class="trail">'</span><span class="trail">s</span> 
-           Portfolio
-       </h1>
+       <h1 id="maintitle">Juan Quinche</h1>
+       <p class="portfolio-subtitle">Mechanical engineering, robotics, and applied computing</p>
 
        <main>
          
             <section id="portrait">
-                <img id="myself"  class="myself" src="images/me.jpg" alt="myself">
+                <img id="myself" class="myself" src="linkedin_picture.jpeg" alt="Juan Quinche">
             </section>
             <section id="about">
                 <div id="abouttitle">
@@ -37,37 +37,15 @@
                 </div>
                 <div id="aboutdescription">
                     <p>
-                        Hi! My name is Juan Quinche. I’m a MERN, PERN, plus redux and TypeScript, full
-                        stack developer currently living in Bogota, Colombia! I love to develop great 
-                        projects and work on them until I reach an incredible result.
+                        Trilingual mechanical engineering student and full-stack developer, recognized with two
+                        academic excellence scholarships. Currently the elected student representative for the
+                        mechanical engineering program committee. Highly capable in creative problem-solving,
+                        careful project planning, and resource optimization. Passionate about system design and
+                        continuous learning. Seeking professional challenges that bridge mechanical engineering
+                        design, the aerospace industry, and software development.
                         <br><br>
-                        Besides that, I really like to learn new things and abilities, both in tech and
-                        science. Currently, I know different programming languages such as PHP, Python, 
-                        Julia and Mql5. Also, I have a high proficiency in JavaScript. 
-                        Now, I’m working with those technologies to build all kinds of web 
-                        apps and analyze data.
+                        <a href="https://www.linkedin.com/in/juan-ram%C3%ADrez-quinche-61855527a/" target="_blank" rel="noopener">LinkedIn profile</a>
                     </p>
-                </div>
-                <div id="aboutskills">
-                    <div><img src="images/1200px-Javascript-shield.svg.png" alt="javascript logo"></div>
-                    <div><img src="images/1280px-Git-logo.svg.png" alt="git logo"></div>
-                    <div><img src="images/1200px-Python-logo-notext.svg.png" alt="python logo"></div>
-                    <div><img src="images/HTML5_logo_black.svg.png" alt="html5 logo"></div>
-                    <div><img src="images/Julia_Programming_Language_Logo.svg.png" alt="julia logo"></div>
-                    <div><img src="images/mql-5-logo.png" alt="mql5 logo"></div>
-                    <div><img src="images/png-clipart-html-css3-cascading-style-sheets-logo-markup-language-digital-agency-miscellaneous-blue-thumbnail.png" alt="css logo"></div>
-                    
-                </div>
-                <div id="aboutcontact">
-                    <button id="buttoncontactopen">Contact</button>
-                    <button id="buttoncontactclose">Close Contact</button>
-                    <div  id="contactinfo" class="contactinfo">
-                        <div>
-                            <p>Email: juanangelramirez1@hotmail.com<br>
-                                GitHub: <a href="https://github.com/juan12425" target="_blank">https://github.com/juan12425</a>
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </section>
             
@@ -76,152 +54,95 @@
             <section class="project1 flexnormalwrap">
                 <div class="project1div2">
                     <div>
-                        <h3>Santuario Hostel, Yelapa Mexico (Web App Developer)</h3>
+                        <h3>PowderLab - Mechanical Engineering</h3>
                         <p>
-                            The former version of santuarioyelapa.com, a luxury hostel located at Yelapa Mexico, 
-                            was designed and developed by me. The app in question counted with a user-friendly 
-                            frontend as well as a full reservation system and payment checkout flow with PayPal. 
-                            Santuario's app was mainly developed using the MERN stack.
-                            <br><br>
+                            PowderLab is a laboratory homogenizer for metal powders, designed to
+                            improve sample stability, safety, and mixing efficiency. Its three independent
+                            stations can process up to six test tubes at once, with separate speed control
+                            for each station. The design also improves sample retention and supports
+                            simultaneous mixing conditions. The gallery shows the lab demonstration,
+                            upper view, and detailed operation; design sketches are available below.
                         </p>
                     </div>
                 </div>
 
-                <div class="project1div1 santuario-background">
-                    <button id="back-santuario" class="showcase-buttons" disabled> < </button>
-                    <a href="#">
-                        <img id="santuario-photo-1" src="images/santuario.png" alt="The Tech Blog">
-                    </a>
-                    <button id="forw-santuario" class="showcase-buttons"> > </button>
+                <div class="project1div1 mixer-media">
+                    <div class="mixer-video-carousel" aria-label="Powder mixer video showcase">
+                        <button id="back-mixer" class="showcase-buttons" type="button" aria-label="Previous Powder Mixer video" disabled>&#8592;</button>
+                        <figure class="mixer-video-slide">
+                            <video id="mixer-video-1" controls preload="metadata" playsinline>
+                                <source src="new_projects/Mixer/video_powde_lab.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>Powder lab demonstration</figcaption>
+                        </figure>
+                        <figure class="mixer-video-slide mixer-video-slide-hidden">
+                            <video id="mixer-video-2" controls preload="metadata" playsinline>
+                                <source src="new_projects/Mixer/upper_view.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>Upper view</figcaption>
+                        </figure>
+                        <figure class="mixer-video-slide mixer-video-slide-hidden">
+                            <video id="mixer-video-3" controls preload="metadata" playsinline>
+                                <source src="new_projects/Mixer/higher_quality_video.mp4" type="video/mp4">
+                            </video>
+                            <figcaption>Detailed operation</figcaption>
+                        </figure>
+                        <button id="forw-mixer" class="showcase-buttons" type="button" aria-label="Next Powder Mixer video">&#8594;</button>
+                    </div>
+                    <details class="mixer-sketches">
+                        <summary>View design sketches</summary>
+                        <a href="new_projects/Mixer/sketches_powder_lab.pdf" target="_blank" rel="noopener">Open sketches in a new tab</a>
+                        <iframe src="new_projects/Mixer/sketches_powder_lab.pdf" title="Powder mixer design sketches"></iframe>
+                    </details>
                 </div>
             </section>
 
             <section class="project1 flexreversewrap">
-                <div class="project1div1 dv-background">
-                    <a href="https://desarrollo-vis-prod-the-tech-blog-23y9bh.mo5.mogenius.io/">
-                        <img id="dv-photo-1" src="images/desarrollo-visible.png" alt="desarrollo visible">                        
-                    </a>
-                </div>
-
-                <div class="project1div2">
-                    <div>
-                        <h3>desarrollo visible - React + Express App</h3>
-                        <p>
-                            desarrollo visible - is a consulting company founded in 2009.
-                            This is the pre-production website (missing English version), programmed/coded and designed by me. 
-                            <br><br>
-                            <a href="https://juan12425.github.io/desarrollo-visible-public/" target="_blank">Link</a><br>
-                        </p>
+                <div class="project1div1 automaton-media">
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7432254236484313088?collapsed=1" title="Automaton project video" allowfullscreen loading="lazy"></iframe>
+                    <div class="automaton-video-links">
+                        <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7432254236484313088/" target="_blank" rel="noopener">Open the video on LinkedIn</a>
                     </div>
                 </div>
-            </section>
-            
-            <section class="project1 flexnormalwrap">
                 <div class="project1div2">
                     <div>
-                        <h3>The Tech Blog - MERN App</h3>
+                        <h3>WALL-E Automaton Mechanism</h3>
                         <p>
-                            The Tech Blog - is a full stack MERN application that counts with a full CRUD functionality API 
-                            in the backend as well as a react-redux frontend. In this app it is 
-                            possible to manage users (from clients, moderators, and admins) as 
-                            well as topics, posts and replies.  Everything was planned thinking in the 
-                            user experience; create, modify or delete as you please. 
+                            Based on Pixar's animated film WALL-E, this group project for a mid-2025
+                            mechanisms class recreates the scene of WALL-E navigating down a river with EVA.
+                            The automaton combines cam followers to create the waves, straight and bevel
+                            gears, and a four-bar mechanism that transfers the driven axle's rotation to
+                            WALL-E's rowing arm. The videos show my CAD assembly and animation alongside
+                            the completed real-life mechanism.
                             <br><br>
-                            The Tech Blog was formerly deployed and configured with Docker containers through mogenius.com, 
-                            <a href="https://github.com/juan12425/Blog-MERN-APP" target="_blank">see the code here</a>.
-                            <br><br>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="project1div1 ttb">
-                    <button id="back-ttb" class="showcase-buttons" disabled> < </button>
-                    <a href="https://github.com/juan12425/Blog-MERN-APP">
-                        <img id="ttb-photo-1" src="images/the-tech-blog-home.png" alt="The Tech Blog">
-                        <img id="ttb-photo-2" src="images/the-tech-blog.png" class="showcase-image-hidden" alt="The Tech Blog">
-                    </a>
-                    <button id="forw-ttb" class="showcase-buttons"> > </button>
-                </div>
-            </section>
-            
-            <section class="project1 flexreversewrap" id="hbprojectsec">
-                <div id="hbphotodivid" class="project1div1">
-                    <button id="back-hb" class="showcase-buttons" disabled> < </button>
-                    <a href="https://www.huntingbots.net">
-                        <img id="hb-photo-1" src="images/hb-net.png" alt="Hunting Bots company page">
-                        <img id="hb-photo-2" class="showcase-image-hidden" src="images/signals-table.png" alt="Hunting Bots signals table">
-                        <img id="hb-photo-3" class="showcase-image-hidden" src="images/pie-chart.png" alt="Hunting Bots pie chart portfolio">
-                        <img id="hb-photo-4" class="showcase-image-hidden" src="images/bar-chart.png" alt="Hunting Bots bar chart portfolio">
-                    </a>
-                    <button id="forw-hb" class="showcase-buttons"> > </button>
-                </div>
-
-                <div class="project1div2">
-                    <div>
-                        <h3>Hunting Bots S.E - PHP App (Main developer)</h3>
-                        <p>
-                            Hunting Bots is a financial startup and its aim is to offer 
-                            services such as automated trading, trading signals, consulting, 
-                            and education. The technologies used for its creation were html, css and javascript in the frontend 
-                            and in the backend php and mysql (the last two having an important 
-                            role retrieving and processing trading data from the Mt5 platform, 
-                            as well as providing signals to client automated bots).<br><br>
-                            <a href="https://www.huntingbots.net" target="_blank">Link</a><br>
-                            <a href=".\certificates\patents\dnda.pdf">Copyright File</a> 
+                            <a href="new_projects/videos_automata/plano_explosionado.pdf" target="_blank" rel="noopener">View exploded-view drawing</a>
                         </p>
                     </div>
                 </div>
             </section>
 
             <section class="project1 flexnormalwrap">
-                <div class="project1div2">
-                    <div>
-                        <h3>GitHub User Search - React App</h3>
-                        <p>
-                            The GitHub User Search is a web app made with React that interacts with the github users 
-                            API when triggered by user interaction. It lets you search for public information about 
-                            any user signed up. 
-                            <br><br>
-                            (Remember that as the API has a limit it won’t let you search indefinitely without a token)
-                            <br><br>
-                            <a href="https://juan12425.github.io/Search-GitHub-Users/" target="_blank">See deployment</a><br>
-                            <a href="https://github.com/juan12425/Search-GitHub-Users" target="_blank">See code</a>
+               <div class="project1div2">
+                   <div>
+                       <h3>KnotenSense - GoFest Bogotá 2024</h3>
+                       <p>
+                            KnotenSense was presented at GoFest Bogotá 2024, the city's entrepreneurship festival.
+                            The project is a SaaS platform designed to help businesses manage their social networks.
+                            The gallery shows the event announcement, the KnotenSense booth, and the festival venue.
                         </p>
-                    </div>
-                </div>
+                   </div>
+               </div>
 
-                <div class="project1div1 github-users">
-                    <a href="https://juan12425.github.io/Search-GitHub-Users/"><img src="images/github-users.png" alt="GitHub users search"></a>
-                </div>
-            </section>
-
-            <section id="hbprojectsec" class="project1 flexreversewrap">
-                <div id="the-trattoria-div" class="project1div1">
-                    <button id="back-trattoria" class="showcase-buttons" disabled> < </button>
-                    <a href="https://juan12425.github.io/The-Trattoria/">
-                        <img id="trattoria-photo-1" src="images/the-trattoria.png" alt="The Trattoria landing page">
-                        <img id="trattoria-photo-2" src="images/menu.png" class="showcase-image-hidden" alt="The Trattoria landing page">
-                        <img id="trattoria-photo-3" src="images/delivery.png" class="showcase-image-hidden" alt="The Trattoria landing page">
-                    </a>
-                    <button id="forw-trattoria" class="showcase-buttons"> > </button>
-                </div>
-
-                <div class="project1div2">
-                    <div>
-                        <h3>The Trattoria - React/Redux App</h3>
-                        <p>
-                            The Trattoria is an Italian restaurant front-end design web app made 
-                            with react-redux. It contains different features such as the management 
-                            of dishes in a menu through the collection of state information that is
-                            subsequently displayed in other parts of the app. Also, it has the 
-                            possibility to retrieve menu information from a pre-built API 
-                            (not available directly in GitHub).<br><br>
-
-                            <a href="https://github.com/juan12425/The-Trattoria" target="_blank">See code</a><br>
-                            <a href="https://juan12425.github.io/The-Trattoria/" target="_blank">See deployment</a><br>
-                        </p>
-                    </div>
-                </div>
+               <div class="project1div1 gofest-showcase">
+                   <button id="back-gofest" class="showcase-buttons" type="button" aria-label="Previous GoFest image" disabled>&#8592;</button>
+                   <a href="new_projects/GoFest/post_instagram.jpeg" target="_blank" rel="noopener">
+                       <img id="gofest-photo-1" src="new_projects/GoFest/post_instagram.jpeg" alt="GoFest 2024 announcement featuring KnotenSense">
+                       <img id="gofest-photo-2" src="new_projects/GoFest/WhatsApp%20Image%202026-11-09%20at%2020.46.04%20(4).jpeg" class="showcase-image-hidden" alt="KnotenSense exhibition booth at GoFest">
+                       <img id="gofest-photo-3" src="new_projects/GoFest/WhatsApp%20Image%202026-11-09%20at%2020.46.04.jpeg" class="showcase-image-hidden" alt="GoFest interior and festival installation">
+                       <img id="gofest-photo-4" src="new_projects/GoFest/WhatsApp%20Image%202026-11-09%20at%2020.46.05.jpeg" class="showcase-image-hidden" alt="GoFest Bogotá venue exterior">
+                   </a>
+                   <button id="forw-gofest" class="showcase-buttons" type="button" aria-label="Next GoFest image">&#8594;</button>
+               </div>
             </section>
 
             <section class="project1 flexnormalwrap">
@@ -246,38 +167,10 @@
                 </div>
             </section>
             
-           <section class="project1 flexnormalwrap">
-                <div class="project1div2">
-                    <div>
-                        <h3>Controlled Enviroment</h3>
-                        <p>
-                            This is a robotics and software project intended to create a
-                            controlled environment for diversity of experiments. The 
-                            photos show different parts of the circuit.
-                            <br><br>  
-                            About the details, I developed the project in a way that the whole system could have a user input, 
-                            for example controlling the temperature with lights through relays using an internet connection (see ESP board), 
-                            and an output shown both on a web page and on a LCD screen about the data collected from different kind of sensors, 
-                            consider humidity and alcohol ones (for bacteria use).
-                        </p>
-                    </div>
-                </div>
-            <div class="project1div1 aquarium">
-               
-                <img src="images/aq1.jpg" alt="Arduino board circuit" id="aq1">
-                <img src="images/aq2.jpg" alt="Arduino board circuit" id="aq2">
-                <img src="images/aq3.jpg" alt="Arduino board circuit" id="aq3">
-                
-            </div>
-         </section>
-
         </main>
             
         <footer>
-            <h3>
-                All rights reserved<br>
-                2022-2023
-            </h3>
+            <h3>Juan Quinche / Portfolio</h3>
         </footer>
         
         <script src = "main.js" type = "text/javascript" ></script>
